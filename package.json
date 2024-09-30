@@ -1,0 +1,24 @@
+{
+  "name": "user-address-app",
+  "version": "1.0.0",
+  "description": "A Node.js app with Express for managing Users and their Addresses.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",         // Command to start the application
+    "dev": "nodemon app.js",        // For development, restart the server automatically
+    "migrate": "npx sequelize-cli db:migrate",  // Run database migrations
+    "seed": "npx sequelize-cli db:seed:all"     // Run database seeders
+  },
+  "author": "Your Name",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",       // Middleware to parse incoming request bodies
+    "express": "^4.18.2",           // Fast, unopinionated, minimalist web framework for Node.js
+    "sequelize": "^6.31.0",         // Promise-based ORM for Node.js
+    "sqlite3": "^5.1.6"             // SQLite database
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",            // Tool to automatically restart the server on code changes
+    "sequelize-cli": "^6.6.1"       // Command-line interface for Sequelize to run migrations and models
+  }
+}
